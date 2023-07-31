@@ -40,6 +40,10 @@ Required inputs to **conf_pub.json** file:
 **"telegram_channels": (list(dict))** - list of telegram channels to watch
 
 ---
+
+![alt text](https://github.com/hyde1337/telegram-parse/blob/main/Telegram_Parser.png)
+
+---
 ## Roadmap:
 1. RSS Feed
 2. Comprehensive logging
