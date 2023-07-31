@@ -7,6 +7,12 @@ api_token = conf_reader.read_conf_setting("conf.json", "api_token")
 
 
 def prep_message(message, channel):
+    """
+    function creates message template for notification
+    :param message:
+    :param channel:
+    :return:
+    """
     group = channel["Group_name"]
     link = channel["URL"]
     time_attack = message.date
@@ -19,11 +25,9 @@ def prep_message(message, channel):
 
 def send_message(text):
     """
-    Send a message with the telgram bot
-    Args:
-        text (str): A string of the message that should be sent.
-    Returns:
-        None
+    function sends prepared message
+    :param text:
+    :return:
     """
     api_url = f'https://api.telegram.org/bot{api_token}/sendMessage'
     json = {

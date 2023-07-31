@@ -2,10 +2,7 @@ import json
 
 def read_conf_setting(file_path, setting):
     """
-    The function will read the configuration file and load up required parameters:
-    Args:
-        file_path (str): The path to the configuration file
-    Returns: data
+    The function will read the configuration file and load up required parameters
     """
     try:
         with open(file_path, 'r') as file:

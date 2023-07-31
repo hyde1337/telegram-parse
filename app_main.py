@@ -12,6 +12,9 @@ api_hash = conf_reader.read_conf_setting("conf.json", "api_hash")
 telegram_channels = conf_reader.read_conf_setting("conf.json", "telegram_channels")
 
 def connect_telegram_app(channels):
+    """
+    function to connect to Telegram API
+    """
     for channel in channels:
         print(f"proceeding channel {channel}")
         with TelegramClient(username, api_id, api_hash) as client:
@@ -21,6 +24,12 @@ def connect_telegram_app(channels):
 
 
 def message_context(message, channel):
+    """
+    function to check presence of any word in the word list in the message
+    :param message:
+    :param channel:
+    :return:
+    """
     ddos_wordslist = conf_reader.read_conf_setting("conf.json", "ddos_wordslist")
     if message.forward is None and message.text is not None:
         message_lower = message.text.replace("\n", " ").lower()
@@ -34,6 +43,11 @@ def message_context(message, channel):
 
 
 def check_date(date_in):
+    """
+    function to check the date of the message
+    :param date_in:
+    :return:
+    """
     minutes_relevancy = conf_reader.read_conf_setting("conf.json", "minutes_relevancy")
     now = datetime.datetime.utcnow() - datetime.timedelta(minutes=minutes_relevancy)
 
