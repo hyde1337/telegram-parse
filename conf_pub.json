@@ -1,0 +1,25 @@
+{
+  "chat_id": "***REMOVED***",
+  "api_id": ***REMOVED***,
+  "api_hash": "***REMOVED***",
+  "username": "DDoS",
+  "minutes_relevancy": 1000,
+  "api_token": "***REMOVED***",
+  "ddos_wordslist": ***REMOVED***,
+  "data_wordslist": ***REMOVED***,
+  "telegram_channels":
+  [
+    {"Group_name" : "Anonymous Sudan" , "URL" : "https://t.me/AnonymousSudan"},
+    {"Group_name" : "Mysterious Team Bangladesh" , "URL" : "https://t.me/MysteriousTeam0"},
+    {"Group_name" : "AnonGhost" , "URL" : "https://t.me/AnonGhostOfficialTeam"},
+    {"Group_name" : "Team Herox" , "URL" : "https://t.me/TEAM_HEROX"},
+    {"Group_name" : "GHOSTS of Palestine" , "URL" : "https://t.me/GhostPalestine"},
+    {"Group_name" : "Force Electronic Quds" , "URL" : "https://t.me/ForceElectronicQuds01"},
+    {"Group_name" : "GANOSEC TEAM" , "URL" : "https://t.me/ganosecteam"},
+    {"Group_name" : "OPMA_X_YG" , "URL" : "https://t.me/OPMA_X_YG"},
+    {"Group_name" : "Pirates Of Yemen" , "URL" : "https://t.me/anwar123anwar"},
+    {"Group_name" : "AnonyMous IslaMic" , "URL" : "https://t.me/anony_islamic"},
+    {"Group_name" : "Islamic Hacker Army" , "URL" : "https://t.me/ANONYMOUS_KGT"},
+    {"Group_name" : "Arab Anonymous Team " , "URL" : "https://t.me/ArabAnonForce"}
+  ]
+}
