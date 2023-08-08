@@ -4,6 +4,7 @@
   "api_hash": "",
   "username": "",
   "minutes_relevancy": 1000,
+  "rss_path": "rss_telebot.xml",
   "api_token": "",
   "ddos_wordslist": ["test"],
   "telegram_channels":

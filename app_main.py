@@ -5,6 +5,7 @@ import datetime
 import message_work
 import json
 import conf_reader
+import rss_work
 
 username = conf_reader.read_conf_setting("conf.json", "username")
 api_id = conf_reader.read_conf_setting("conf.json", "api_id")
@@ -38,6 +39,7 @@ def message_context(message, channel):
             if word in message_lower and check_date(message.date):
                 print(message_lower)
                 message_work.prep_message(message, channel)
+                rss_work.write_rss(message, channel)
     else:
         print("No suitable messages were found")
 
