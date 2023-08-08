@@ -19,6 +19,10 @@ Consists from 2 parts:
 
 **message_work.py** - designated for message preparation and sending
 
+**rss_work.py** - designated to work with RSS format and file
+
+**rss_telebot.xml** - example of RSS feed file
+
 ---
 ## Inputs
 Required inputs to **conf_pub.json** file:
@@ -33,6 +37,8 @@ Required inputs to **conf_pub.json** file:
 
 **"minutes_relevancy": (int)** - minutes depth to pick up messages
 
+**"rss_path": (str)** - path to RSS file
+
 **"api_token": (str)** - Telegram Bot API token
 
 **"ddos_wordslist": (list)** - list of words to track
@@ -45,11 +51,11 @@ Required inputs to **conf_pub.json** file:
 
 ---
 ## Roadmap:
-1. RSS Feed
+1. RSS Feed - DONE
 2. Comprehensive logging
 3. Dockerized version
-4. MS Teams Integration
-5. TBC
+4. MS Teams Integration 
+TBC
 
 ---
 ## References:
