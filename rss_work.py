@@ -8,7 +8,7 @@ rss_path = conf_reader.read_conf_setting("conf.json", "rss_path")
 def write_rss(message, channel):
     group = channel["Group_name"]
     link = channel["URL"]
-    time_attack = message.date.strftime('%a, %d %b %Y %H:%M:%S %Z')
+    time_attack = message.date.strftime('%a, %d %b %Y %H:%M:%S GMT')
     #<pubDate>Wed, 02 Oct 2002 13:00:00 GMT</pubDate> - required Time Format
 
     tree = ET.parse(rss_path)
