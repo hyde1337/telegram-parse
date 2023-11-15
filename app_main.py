@@ -21,7 +21,7 @@ def connect_telegram_app(channels):
         try:
             with TelegramClient(username, api_id, api_hash) as client:
                 for message in client.iter_messages(channel["URL"], limit=6):
-                    print(message)
+                    #print(message)
                     message_context(message, channel)
         except:
             print(f"the channel {channel} is not available")
@@ -39,13 +39,13 @@ def message_context(message, channel):
     if message.forward is None and message.text is not None:
         message_lower = message.text.replace("\n", " ").lower()
         for word in ddos_wordslist:
-            print(f"word check {word}")
+            #print(f"word check {word}")
             if word in message_lower and check_date(message.date):
                 #print(message_lower)
                 message_work.prep_message(message, channel)
                 rss_work.write_rss(message, channel)
     else:
-        print("No suitable messages were found")
+        print(f"No suitable messages were found in channel {channel}")
 
 
 def check_date(date_in):
